@@ -182,7 +182,7 @@ a{
     color: rgba(0, 0, 0, 0.5);
 }
 
-@media only screen and (min-height: 896px) and (orientation: portrait){
+@media only screen and (min-height: 896px){
     body{
         background: url(asset/bg\ hp.png);
         background-size: cover;
