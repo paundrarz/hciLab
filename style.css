@@ -64,11 +64,6 @@ select {
     border-radius: 3px;
 }
 
-input[type="checkbox"] {
-    margin-right: 5px;
-    height: 100%;
-}
-
 select[type="gender"]{
     width:385px;
 }
@@ -182,12 +177,12 @@ a{
     /* border: solid red; */
     padding-left:1%;
     /* margin-left: 1%; */
-    height:6vh ;
+    height:5.4vh ;
     font-weight:bold;
     color: rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 300px) and (max-width: 539px) {
     body{
         background: url(asset/bg\ hp.png);
         background-size: cover;
