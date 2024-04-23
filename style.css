@@ -182,7 +182,7 @@ a{
     color: rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (min-width: 300px) and (max-width: 539px) {
+@media only screen and (min-height: 896px) and (orientation: portrait){
     body{
         background: url(asset/bg\ hp.png);
         background-size: cover;
@@ -208,7 +208,7 @@ a{
         /* background-color: red; */
         position: absolute;
         /* margin-top: 10px; */
-        right: 200px;
+        right: 298px;
         color: rgba(0, 0, 0, 0.5);
         transition: .15s ease-in-out;
         font-size: 10px;
@@ -224,24 +224,21 @@ a{
         border-radius: 3px;
     }
 
-    /* select[type="gender"]{
-        width:200px;
-        height: 1vh;
-    } */
-
     .input-field:valid ~ label,
     .input-field:focus ~ label {
         margin-top: -1px;
-        margin-left: 10px;
+        margin-left: 20px;
+        left: 10px;
         font-size: 7px;
         color: #C69956;
         background: rgba(0, 0, 0, 0.8);
         padding: 0 5px;
+        transition: .3s ease-in-out;
     }
 
     .input-box .input-field {
-        width: 80%;
-        font-size: 1em;
+        width: 95%;
+        font-size: 10px;
         color: #333;
         padding-left: 2px;
         margin-bottom: 25px;
@@ -251,18 +248,34 @@ a{
     }
 
     .input-box .select-gender{
-        width: 93%;
+        width: 98%;
         /* border: solid red; */
         padding-left:1%;
         /* margin-left: 1%; */
-        height:4vh ;
+        height:3.7vh; 
         font-size: 10px;
         font-weight:bold;
         color: rgba(0, 0, 0, 0.5);
     }
-
-    /* .title-email{
+    .p-login{
+        font-size: 10px;
+    }
+    button{
         position: relative;
-        left: -1px;
-    } */
+        top: -15px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 414px) and (orientation: landscape){
+    .input-box .select-gender{
+        width: 96.5%;
+        /* border: solid red; */
+        padding-left:1%;
+        /* margin-left: 1%; */
+        height:7.5vh; 
+        /* font-size: 100px; */
+        font-weight:bold;
+        color: rgba(0, 0, 0, 0.5);
+    }
 }
